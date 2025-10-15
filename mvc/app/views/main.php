@@ -62,12 +62,14 @@ echo $current;
                     </a>
                 </li>
             </ul>
+
             <hr>
+
             <a href="#" class="btn btn-success">Iniciar sesión</a>
         </div>
+        <!-- FIN DEL SIDEBAR -->
 
         <!-- SECCION DE INFORMACION PERSONAL -->
-
         <div class="col-10 offset-2 p-3 overflow-auto vh-100">
 
             <div class="container-fluid">
@@ -223,6 +225,8 @@ echo $current;
                     });
                 });
             </script>
+        </div>
+        <!-- FIN DE LA SECCION DE INFORMACION PERSONAL -->
 </body>
 
 </html>
