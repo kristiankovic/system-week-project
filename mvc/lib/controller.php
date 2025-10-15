@@ -11,8 +11,10 @@ class controller{
             return $content;
         }
         else{
-            echo "vista no encotrada ../app/views/$vista.php";
+            echo "No se puedo cargar la vista: ../app/views/$vista.php";
         }
+
+        return "hola desde homeview";
     }
 }
 ?>

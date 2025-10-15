@@ -2,13 +2,11 @@
 namespace app\controllers;
 use lib\controller;
 
-class HomeController extends controller{
+class homeController extends controller{
 
     public function index(){
        
-        return $this->view('HomeView',[
-            'title'=>'Home']);
+        return $this->view('main', ['title'=>'Home']);
     }
-    
 }
 ?>

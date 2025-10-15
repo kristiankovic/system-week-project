@@ -1,6 +1,7 @@
-
 <?php
+
 namespace lib;
+
 class Route{
     
     private static $routes = [];
@@ -17,24 +18,16 @@ class Route{
 
       public static function dispatch(){
         $uri = $_SERVER["REQUEST_URI"];
-
-        
        
         $method = $_SERVER["REQUEST_METHOD"];
-       // echo "Url".$uri."<br>";
-        //var_dump(self::$routes);
         foreach(self::$routes[$method] as $url=>$funcion){
             if(strpos($url, ":")!==false){
                 $url = preg_replace("#:[a-zA-Z0-9]+#","([a-zA-Z0-9]+)",$url);
-                //echo $url;
-                //return;
             }
 
 
             if(preg_match("#^$url$#",$uri, $matches)){
                 $params = array_slice($matches,1);
-                //echo json_encode($params);
-               // $response = $funcion(...$params);
 
 
                if(is_callable($funcion)){
@@ -54,7 +47,7 @@ class Route{
                 return;
             }
         }
-        echo "404";
+        echo "404 Not Found";
     }
 }
 ?>

@@ -1,6 +1,5 @@
 
 <?php
-
 spl_autoload_register(function($clase){
     $ruta ="../".str_replace("\\","/",$clase).".php";
     if(file_exists($ruta)){
