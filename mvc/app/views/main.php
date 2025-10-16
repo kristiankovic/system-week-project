@@ -1,8 +1,6 @@
 <?php
 // filepath: c:\Users\USER\Desktop\tarea\system-week-project\mvc\app\views\inaguracion.php
 $current = $_SERVER['REQUEST_URI'];
-
-echo $current;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,14 +10,19 @@ echo $current;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Inicio</title>
+    <style>
+        .nav-link{
+            color: white;
+        }
+    </style>
 </head>
 
 <body data-bs-theme="dark">
 
-    <!-- SIDEBAR -->
-    <div class=" row m-0 p-0 vw-100 position-absolute top-0 start-0 end-0 bottom-0 ">
-
-        <div class=" d-flex flex-column flex-shrink-0 p-3 text-white bg-dark col-2 position-fixed top-0 bottom-0 vh-100 bg-body-tertiary">
+    <div class="row m-0 p-0 vw-100 position-absolute top-0 start-0 end-0 bottom-0">
+        
+        <!-- SIDEBAR -->
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark col-2 position-fixed top-0 bottom-0 vh-100 bg-body-tertiary">
 
             <a href="/mvc/public" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                 <div class="fs-4 mb-3">
@@ -34,31 +37,31 @@ echo $current;
             <ul class="menu nav nav-pills flex-column mb-auto">
 
                 <li class="nav-item">
-                    <a href="/mvc/public/" class="nav-link <?= ($current == '/mvc/public/' ? 'active' : 'text-white'); ?>">
+                    <a href="/mvc/public/" class="nav-link <?= ($current == '/mvc/public/' ? 'bg-secondary' : 'text-white'); ?>">
                         Inicio
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="/mvc/public/inaguracion" class="nav-link <?= ($current == '/mvc/public/inaguracion' ? 'active' : 'text-white'); ?>">
-                        Inaguración y Ponencias
+                    <a href="/mvc/public/inaguracion" class="nav-link <?= ($current == '/mvc/public/inaguracion' ? 'bg-secondary' : 'text-white'); ?>">
+                        Inaguración, Ponencias y Hackaton
                     </a>
                 </li>
 
                 <li>
-                    <a href="/mvc/public/talleres" class="nav-link <?= ($current == '/mvc/public/talleres' ? 'active' : 'text-white'); ?>">
-                        Talleres y Hackaton
+                    <a href="/mvc/public/talleres" class="nav-link <?= ($current == '/mvc/public/talleres' ? 'bg-secondary' : 'text-white'); ?>">
+                        Talleres
                     </a>
                 </li>
 
                 <li>
-                    <a href="/mvc/public/torneo" class="nav-link <?= ($current == '/mvc/public/torneo' ? 'active' : 'text-white'); ?>">
+                    <a href="/mvc/public/torneo" class="nav-link <?= ($current == '/mvc/public/torneo' ? 'bg-secondary' : 'text-white'); ?>">
                         Torneo de Fútbol
                     </a>
                 </li>
                 <li>
-                    <a href="/mvc/public/pupuseada" class="nav-link <?= ($current == '/mvc/public/pupuseada' ? 'active' : 'text-white'); ?>">
-                        Pupuseada
+                    <a href="/mvc/public/feria-logros" class="nav-link <?= ($current == '/mvc/public/feria-logros' ? 'bg-secondary' : 'text-white'); ?>">
+                        Feria de logros y Pupuseada
                     </a>
                 </li>
             </ul>
@@ -74,7 +77,7 @@ echo $current;
 
             <div class="container-fluid">
 
-                <h3 class="text-center text-white p-2">Bienvenido al Blog personal sobre la <strong>Semana de Sistemas 2025</strong></h3>
+                <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Bienvenido al Blog personal sobre la <strong>Semana de Sistemas 2025</h3>
 
                 <h2 class="pt-3">Sobre mi...</h2>
 
@@ -149,14 +152,13 @@ echo $current;
 
                 </div>
 
-
                 <!-- SECCION SOBRE LAS TECNOLOGIAS USADAS -->
 
                 <div class="container-fluid pt-3">
 
-                    <div class="text-center p-2 m-3 text-white bg-secondary rounded-3">
-                        <h4 class="">Tecnológias usadas para la realización de este blog</h4>
-                    </div>
+                    <hr class="my-5">
+                    <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Tecnologías usadas para la realización de este blog</h3>
+                    <hr class="my-5">
 
                     <!-- TARJETAS -->
                     <div class="row">
@@ -211,20 +213,6 @@ echo $current;
             </div>
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-            
-            <script>
-
-                const boton = document.querySelector(".menu a");
-
-                menuItems.forEach(item => {
-                    
-                    item.addEventListener("click", () => {
-                        
-                        menuItems.forEach(i => i.classList.add("active"));
-                        item.classList.remove("active");
-                    });
-                });
-            </script>
         </div>
         <!-- FIN DE LA SECCION DE INFORMACION PERSONAL -->
 </body>

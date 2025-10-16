@@ -21,8 +21,8 @@ class homeController extends controller{
         return $this->view('torneo', ['title'=>'Torneo']);
     }
 
-    public function pupuseada(){
-        return $this->view('pupuseada', ['title'=>'Pupuseada']);
+    public function feriaLogros(){
+        return $this->view('feria-logros', ['title'=>'Pupuseada']);
     }
 }
 ?>

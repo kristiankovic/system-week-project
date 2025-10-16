@@ -8,7 +8,7 @@ Route::get("/", [homeController::class, "index"]);
 Route::get("/inaguracion", [homeController::class, "inaguracion"]);
 Route::get("/talleres", [homeController::class, "talleres"]);
 Route::get("/torneo", [homeController::class, "torneo"]);
-Route::get("/pupuseada", [homeController::class, "pupuseada"]);
+Route::get("/feria-logros", [homeController::class, "feriaLogros"]);
 
 Route::dispatch();
 ?>
