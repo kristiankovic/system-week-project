@@ -12,7 +12,7 @@ $current = $_SERVER['REQUEST_URI'];
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Inaguracion</title>
     <style>
-        .nav-link{
+        .nav-link {
             color: white;
         }
 
@@ -143,35 +143,37 @@ $current = $_SERVER['REQUEST_URI'];
                 <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Inicio de la Semana de Sistemas 2025</h3>
                 <hr class="my-5">
 
-                <div class="pb-3">
-                    <p class="fs-4">El lunes 13 de octubre, dio inicio la Semana de Sistemas el acto se realizo en el Auditorio 1.</p>
-                </div>
-
-                <section class="mb-5">
-                    <div class="gallery-grid">
-                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
-                            <img src="/mvc/public/static/img/IMG_6602.JPG" alt="Imagen 1">
-                            <div class="gallery-overlay">
-                                <h5>Momentos antes de iniciar...</h5>
-                                <p class="small">Preparativos finales</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
-                            <img src="/mvc/public/static/img/IMG_6747.JPG" alt="Imagen 2">
-                            <div class="gallery-overlay">
-                                <h5>Ceremonia de apertura</h5>
-                                <p class="small">Inicio oficial del evento</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
-                            <img src="/mvc/public/static/img/IMG_6746.JPG" alt="Imagen 3">
-                            <div class="gallery-overlay">
-                                <h5>Asistentes al evento</h5>
-                                <p class="small">Audiencia participante</p>
-                            </div>
-                        </div>
+                <div class="container">
+                    <div class="pb-3">
+                        <p class="fs-4">El lunes 13 de octubre, dio inicio la Semana de Sistemas el acto se realizo en el Auditorio 1.</p>
                     </div>
-                </section>
+
+                    <section class="mb-5">
+                        <div class="gallery-grid">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                <img src="/mvc/public/static/img/IMG_6602.JPG" alt="Imagen 1">
+                                <div class="gallery-overlay">
+                                    <h5>Momentos antes de iniciar...</h5>
+                                    <p class="small">Preparativos finales</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                <img src="/mvc/public/static/img/IMG_6747.JPG" alt="Imagen 2">
+                                <div class="gallery-overlay">
+                                    <h5>Ceremonia de apertura</h5>
+                                    <p class="small">Inicio oficial del evento</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                <img src="/mvc/public/static/img/IMG_6746.JPG" alt="Imagen 3">
+                                <div class="gallery-overlay">
+                                    <h5>Asistentes al evento</h5>
+                                    <p class="small">Audiencia participante</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
                 <!-- SECCION DE PONENCIAS -->
                 <hr class="my-5">

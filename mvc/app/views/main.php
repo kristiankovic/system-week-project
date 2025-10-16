@@ -77,7 +77,7 @@ $current = $_SERVER['REQUEST_URI'];
 
             <div class="container-fluid">
 
-                <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Bienvenido al Blog personal sobre la <strong>Semana de Sistemas 2025</h3>
+                <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Bienvenido al Blog personal sobre la <strong>Semana de Sistemas 2025</strong></h3>
 
                 <h2 class="pt-3">Sobre mi...</h2>
 
