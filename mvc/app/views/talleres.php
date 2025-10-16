@@ -13,6 +13,12 @@ $current = $_SERVER['REQUEST_URI'];
     <style>
         .nav-link {
             color: white;
+
+        }
+
+        .section img{
+            height: 400px;
+            width: 630px;
         }
     </style>
 </head>
@@ -78,9 +84,82 @@ $current = $_SERVER['REQUEST_URI'];
 
         <!-- SECCION DE TARJETAS -->
         <div class="col-10 offset-2 p-3 overflow-auto vh-100">
-            <div class="container-fluid">
-                <div class="pb-3">
-                    <h3 class="text-center bg-white text-black rounded-4 p-2">Talleres que se impartieron en la Semana de Sistemas 2025</h3>
+
+            <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Talleres que se impartieron en la Semana de Sistemas 2025</h3>
+
+            <div class="py-4">
+
+                <div class="container">
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 p-3">
+                                <img src="/mvc/public/static/img/taller1.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Taller #1: Toma de decisiones estratégicas basadas en datos</h5>
+                                    <p class="card-text">En el entorno empresarial actual, la capacidad de tomar decisiones informadas y estratégicas marca
+                                        la diferencia entre el éxito y el estancamiento. Este taller te sumergirá en el fascinante mundo del análisis de datos
+                                        aplicado a la toma de decisiones gerenciales, educativas y de consultoría.</p>
+                                    <p>¿Cómo Ayudan los Datos en la Toma de Decisiones?</p>
+                                    <ul>
+                                        <li><strong>Eliminan la Incertidumbre.</strong></li>
+                                        <li><strong>Optimizan Recursos</strong></li>
+                                        <li><strong>Fundamentan Decisiones Estratégicas</strong></li>
+                                        <li><strong>Fomentan la Cultura de Mejora Continua</strong></li>
+                                    </ul>
+                                    <p>En la era digital, los datos son el nuevo petróleo, pero solo quienes saben refinarlos y aplicarlos estratégicamente
+                                        obtienen verdadero valor. Este taller te dará las herramientas para convertir información en acción, números en estrategia,
+                                        y análisis en resultados tangibles.</p>
+                                    <p class="card-text"><small class="text-body-secondary">Dirigido por: MSc. Enrique Cortez</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Feedback sobre el taller #1...</h3>
+
+                    <section>
+                        <div class="row section my-4">
+                            <div class="col-6">
+                                <img src="/mvc/public/static/img/taller1_1.png" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img src="/mvc/public/static/img/taller1-2.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Taller #2: Construyendo un CRUD en minutos con Laravel y Filament</h5>
+                                    <p class="card-text">En este taller se usaron tecnologías para el desarrollo web, mas especificamente
+                                        para el frontend.</p>
+                                    <p>¿Por Qué Laravel y Filament Revolucionan el Desarrollo?</p>
+                                    <ul>
+                                        <li><strong>Velocidad de Desarrollo.</strong></li>
+                                        <li><strong>Código Elegante y Mantenible</strong></li>
+                                        <li><strong>Ecosistema Completo</strong></li>
+                                        <li><strong>Interfaces Profesionales Instantáneas</strong></li>
+                                        <li><strong>Características Empresariales</strong></li>
+
+                                    </ul>
+                                    <p>En la era digital, los datos son el nuevo petróleo, pero solo quienes saben refinarlos y aplicarlos estratégicamente
+                                        obtienen verdadero valor. Este taller te dará las herramientas para convertir información en acción, números en estrategia,
+                                        y análisis en resultados tangibles.</p>
+                                    <p class="card-text"><small class="text-body-secondary">Dirigido por Ing. Gabriel Castillo</small></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 p-3">
+                                <img src="/mvc/public/static/img/taller2.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
