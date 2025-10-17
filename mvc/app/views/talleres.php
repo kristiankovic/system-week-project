@@ -15,10 +15,13 @@ $current = $_SERVER['REQUEST_URI'];
             color: white;
 
         }
-
         .section img {
-            height: 400px;
-            width: 630px;
+            width: 100%;
+            max-width: 100%;
+            width: 100%; 
+            max-width:100%;
+            object-fit: cover;
+            display: block;
         }
     </style>
 </head>
@@ -80,7 +83,7 @@ $current = $_SERVER['REQUEST_URI'];
         <!-- SECCION DE TARJETAS -->
         <div class="col-10 offset-2 p-3 overflow-auto vh-100">
 
-        <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2 m-4">Talleres que se impartieron en la Semana de Sistemas 2025</h3>
+        <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2 mb-4">Talleres que se impartieron en la Semana de Sistemas 2025</h3>
         
             <div class="container">
 
@@ -111,18 +114,25 @@ $current = $_SERVER['REQUEST_URI'];
                     </div>
                 </div>
 
+                <!-- SECCION DE FEEDBACK DEL TALLER 1 -->
                 <h3>Feedback sobre el taller #1...</h3>
 
-                <section>
-                    <div class="row section my-4">
-                        <div class="col-6">
-                            <img src="/mvc/public/static/img/taller1_1.png" alt="">
+                <section class="my-3">
+
+                    <div class="row">
+
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 p-2 section">
+                            <img src="/mvc/public/static/img/taller1_1.png" alt="Visualizacion del taller de forma virtual">
                         </div>
-                        <div class="col-6">
-                            <img src="/mvc/public/static/img/taller1-2.png" alt="">
+
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 p-2 section">
+                            <img src="/mvc/public/static/img/taller1-2.png" alt="Visualizacion del taller de forma virtual">
                         </div>
                     </div>
+
                 </section>
+                <!-- FIN DE LA SECCION DE FEEDBACK DEL TALLER 1 -->
+
 
                 <div class="card mb-3">
                     <div class="row g-0">
