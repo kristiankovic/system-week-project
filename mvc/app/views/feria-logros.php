@@ -14,6 +14,24 @@ $current = $_SERVER['REQUEST_URI'];
         .nav-link {
             color: white;
         }
+
+        .card img {
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .card-hackaton {
+            height: 350px;
+        }
+
+        .card-body-scroll {
+            overflow: sccroll;
+        }
+
+        .card-img {
+            height: 300px;
+        }
     </style>
 </head>
 
@@ -74,8 +92,171 @@ $current = $_SERVER['REQUEST_URI'];
         <!-- SECCION DE CONTENIDO -->
         <div class="col-10 offset-2 p-3 overflow-auto vh-100">
 
-            <div class="container-fluid">
+            <div class="container">
 
+                <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Feria de logros de la Semana de Sistemas 2025.</h3>
+                <hr class="mt-5">
+
+                <p class="fs-5">El jueves 16 de octubre, frente al edificio Minerva se llevo a acabo la feria de logros. Donde participaron gran
+                    número de equipos para mostrar sus proyectos desarrollados en las diferentes materias y con
+                    gran variedad de tecnologías.
+                </p>
+
+                <!-- SECCION DE LA FERIA DE LOGROS -->
+                <div class="py-3">
+
+                    <!-- SECCION DE CARDS -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="/mvc/public/static/img/feria1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Proyecto 1</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="/mvc/public/static/img/feria2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Proyecto 2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="/mvc/public/static/img/feria3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Proyecto 3</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="/mvc/public/static/img/feria4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Proyecto 4</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="/mvc/public/static/img/feria5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Proyecto 5</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="/mvc/public/static/img/feria6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Proyecto 6</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="/mvc/public/static/img/feria7.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Proyecto 7</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="/mvc/public/static/img/feria8.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Proyecto 8</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="/mvc/public/static/img/feria9.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Proyecto 9</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="/mvc/public/static/img/feria10.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Proyecto 10</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="/mvc/public/static/img/feria11.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Proyecto 11 - Ganadoras de la Feria de Logros</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="/mvc/public/static/img/feria12.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Proyecto 12</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="/mvc/public/static/img/feria13.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Proyecto 13</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- FIN DE LA SECCION DE CARDS -->
+
+                </div>
+                <!-- FIN DE LA SECCION DE LA FERIA DE LOGROS -->
+
+                <!-- SECCION DE LA PUPUSEADA -->
+                <hr class="mb-5">
+                <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Concurso de Pupusas</h3>
+                <hr class="mt-5">
+
+                <section class="row">
+                    <div class="col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <p class="fs-5">Participaron muchos estudiantes en esta actividad
+                            para poner a prueba su apetito por las pupusas.</p>
+                    </div>
+
+                    <div class="py-4">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="/mvc/public/static/img/feria1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Proyecto 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- FIN DE LA SECCION DE LA PUPUSEADA -->
             </div>
 
         </div>

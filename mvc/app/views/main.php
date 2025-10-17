@@ -82,8 +82,9 @@ $current = $_SERVER['REQUEST_URI'];
             <div class="container">
 
                 <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Bienvenido al Blog personal sobre la <strong>Semana de Sistemas 2025</strong></h3>
+                <hr class="mt-5">
 
-                <h2 class="pt-3">Sobre mi...</h2>
+                <h2 class="py-2">Sobre mi...</h2>
 
                 <div class="row col-sm-12">
 
@@ -91,7 +92,7 @@ $current = $_SERVER['REQUEST_URI'];
 
                         <div class="row">
                             <div class="col-lg-5 col-xl-3">
-                                <img class="py-2" style="width: 350px; height: auto; " src="/mvc/public/static/img/perfil.JPG" alt="...">
+                                <img class="py-2" style="width: 350px; height: auto;" src="/mvc/public/static/img/perfil.JPG" alt="...">
                             </div>
 
                             <div class="col-lg-7 col-xl-9">

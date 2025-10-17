@@ -14,6 +14,11 @@ $current = $_SERVER['REQUEST_URI'];
         .nav-link {
             color: white;
         }
+
+        .img-torneo img{
+            height: 100%;
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -76,20 +81,28 @@ $current = $_SERVER['REQUEST_URI'];
         <div class="col-10 offset-2 p-3 overflow-auto vh-100">
 
             <div class="container">
-                <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Torneo de Fútbol 11</h3>
-                <hr class="my-5">
 
+                <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Torneo de Fútbol 11</h3>
+                <hr class="mt-5">
+                
                 <div class="text-danger">
                     <h3 class="">El miércoles 15 de octubre se llevaria a cabo el torneo de fútbol 11.</h3>
                     <p class="fs-5">Pero debido a factores climáticos tuvo que suspenderse de manera definitiva.</p>
                 </div>
 
-                <div class="row">
-                    <div class="col">
-                        <img src="" alt="">
+                <div class="row g-4">
+
+                    <div class="col-12 col-sm-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 img-torneo">
+                        <img src="/mvc/public/static/img/torneo-cancelado.jpg" alt="Aviso UES" style="border-radius: 8px;">
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 img-torneo">
+                        <img src="/mvc/public/static/img/aviso.jpg" alt="Aviso MINED" style="border-radius: 8px;">
                     </div>
                 </div>
+
             </div>
+
         </div>
 
     </div>

@@ -77,7 +77,8 @@ $current = $_SERVER['REQUEST_URI'];
         .card-hackaton {
             height: 450px;
         }
-        .card-img{
+
+        .card-img {
             height: 300px;
         }
     </style>
@@ -144,43 +145,43 @@ $current = $_SERVER['REQUEST_URI'];
             <div class="container">
 
                 <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Inicio de la Semana de Sistemas 2025</h3>
-                <hr class="my-5">
+                <hr class="mt-5">
 
                 <!-- SECCION DE INICIO -->
-                <section class="mb-5">
-                    <p class="fs-4">El lunes 13 de octubre, dio inicio la Semana de Sistemas el acto se realizo en el Auditorio 1.</p>
+                <!-- <section class="mb-5"> -->
+                <p class="fs-5">El lunes 13 de octubre, dio inicio la Semana de Sistemas el acto se realizo en el Auditorio 1.</p>
 
-                    <div class="gallery-grid">
-                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
-                            <img src="/mvc/public/static/img/IMG_6602.JPG" alt="Imagen 1">
-                            <div class="gallery-overlay">
-                                <h5>Momentos antes de iniciar...</h5>
-                                <p class="small">Preparativos finales</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
-                            <img src="/mvc/public/static/img/IMG_6747.JPG" alt="Imagen 2">
-                            <div class="gallery-overlay">
-                                <h5>Ceremonia de apertura</h5>
-                                <p class="small">Inicio oficial del evento</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
-                            <img src="/mvc/public/static/img/IMG_6746.JPG" alt="Imagen 3">
-                            <div class="gallery-overlay">
-                                <h5>Asistentes al evento</h5>
-                                <p class="small">Audiencia participante</p>
-                            </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
+                        <img src="/mvc/public/static/img/IMG_6602.JPG" alt="Imagen 1">
+                        <div class="gallery-overlay">
+                            <h5>Momentos antes de iniciar...</h5>
+                            <p class="small">Preparativos finales</p>
                         </div>
                     </div>
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
+                        <img src="/mvc/public/static/img/IMG_6747.JPG" alt="Imagen 2">
+                        <div class="gallery-overlay">
+                            <h5>Ceremonia de apertura</h5>
+                            <p class="small">Inicio oficial del evento</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
+                        <img src="/mvc/public/static/img/IMG_6746.JPG" alt="Imagen 3">
+                        <div class="gallery-overlay">
+                            <h5>Asistentes al evento</h5>
+                            <p class="small">Audiencia participante</p>
+                        </div>
+                    </div>
+                </div>
                 </section>
                 <!-- FIN DE LA SECCION DE INICIO -->
 
 
                 <!-- SECCION DE PONENCIAS -->
-                <hr class="my-5">
+                <hr class="mb-5">
                 <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Ponencias...</h3>
-                <hr class="my-5">
+                <hr class="mt-5">
 
                 <section class="row" style="padding-bottom: 20px;">
 
@@ -212,80 +213,77 @@ $current = $_SERVER['REQUEST_URI'];
                 </section>
                 <!-- FIN DE LA SECCION DE PONENCIAS -->
 
-                <hr class="my-5">
+                <hr class="mb-5">
                 <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Hackaton</h3>
-                <hr class="my-5">
+                <hr class="mt-5">
 
-                <div class="container-fluid">
-                    <p class="fs-4 my-3">En el día de la inaguración tambien se llevo a cabo un <strong class="text-success">Hackaton</strong>, donde participaron estudiantes para demostrar
-                        sus habilidades con el lenguaje de C#
-                    </p>
-                </div>
+                <p class="fs-4 my-3">En el día de la inaguración tambien se llevo a cabo un <strong class="text-success">Hackaton</strong>, donde participaron estudiantes para demostrar
+                    sus habilidades con el lenguaje de C#.</p>
 
                 <!-- SECCION DEL HACKATON -->
                 <div class="py-5">
-                    <div class="container">
 
-                        <!-- SECCION DE CARDS -->
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                            <div class="col">
-                                <div class="card card-hackaton shadow-sm">
-                                    <img src="/mvc/public/static/img/hackaton.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Preparación preliminar para posteriormente dar inicio al evento.</p>
-                                    </div>
+                    <!-- SECCION DE CARDS -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card card-hackaton shadow-sm">
+                                <img src="/mvc/public/static/img/hackaton.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Preparación preliminar para posteriormente dar inicio al evento.</p>
                                 </div>
                             </div>
-
-                            <div class="col">
-                                <div class="card card-hackaton shadow-sm">
-                                    <img src="/mvc/public/static/img/hackaton2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Estudiantes que participaron en la actividad listos para mostrar sus actividades.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="card card-hackaton shadow-sm">
-                                    <img src="/mvc/public/static/img/hackaton3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Desarrollo de la actividad y puesta en marcha de todos los ejercicios.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="card card-hackaton shadow-sm">
-                                    <img src="/mvc/public/static/img/hackaton4.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Estudiantes orgullosos de su trabajo en el desarrollo del evento.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="card card-hackaton shadow-sm">
-                                    <img src="/mvc/public/static/img/hackaton5.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">MI TIGEREEE DANDO CATEDRAAAA LOCO FAACK 🧑‍🍳.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="card card-hackaton shadow-sm">
-                                    <img src="/mvc/public/static/img/hackaton6.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">🧑‍🍳🧑‍🍳COOKING COOKING COOKING THE GOOOAT 🐐🐐🐐.</p>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
+
+                        <div class="col">
+                            <div class="card card-hackaton shadow-sm">
+                                <img src="/mvc/public/static/img/hackaton2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Estudiantes que participaron en la actividad listos para mostrar sus actividades.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card-hackaton shadow-sm">
+                                <img src="/mvc/public/static/img/hackaton3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Desarrollo de la actividad y puesta en marcha de todos los ejercicios.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card-hackaton shadow-sm">
+                                <img src="/mvc/public/static/img/hackaton4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Estudiantes orgullosos de su trabajo en el desarrollo del evento.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card-hackaton shadow-sm">
+                                <img src="/mvc/public/static/img/hackaton5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">MI TIGEREEE DANDO CATEDRAAAA LOCO FAACK 🧑‍🍳.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card-hackaton shadow-sm">
+                                <img src="/mvc/public/static/img/hackaton6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">🧑‍🍳🧑‍🍳COOKING COOKING COOKING THE GOOOAT 🐐🐐🐐.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
                 <!-- FIN DE LA SECCION DEL HACKATON -->
+
             </div>
 
         </div>

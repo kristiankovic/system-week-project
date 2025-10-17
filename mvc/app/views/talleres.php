@@ -93,10 +93,12 @@ $current = $_SERVER['REQUEST_URI'];
         <div class="col-10 offset-2 p-3 overflow-auto vh-100">
 
             <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2 mb-4">Talleres que se impartieron en la Semana de Sistemas 2025</h3>
-
+            <hr class="mt-5">
+            
+            <p class="fs-4">Se llevaron a cabo varios talleres, a los cuales solo pude entrar a 2.</p>
             <div class="container">
 
-                <div class="card mb-3">
+                <div class="card mb-3 border-0">
                     <div class="row g-0">
                         <div class="col-md-4 p-3">
                             <img src="/mvc/public/static/img/taller1.jpg" class="img-fluid rounded-start" alt="...">
@@ -147,7 +149,7 @@ $current = $_SERVER['REQUEST_URI'];
                 <!-- FIN DE LA SECCION DE FEEDBACK DEL TALLER 1 -->
 
                 <!-- SECCION DEL TALLER 2 -->
-                <div class="card mb-3">
+                <div class="card mb-3 border-0">
                     <div class="row g-0">
 
                         <div class="col-md-8">
