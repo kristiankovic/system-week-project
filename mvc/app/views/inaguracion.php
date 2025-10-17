@@ -77,15 +77,18 @@ $current = $_SERVER['REQUEST_URI'];
         .card-hackaton {
             height: 450px;
         }
+        .card-img{
+            height: 300px;
+        }
     </style>
 </head>
 
 <body data-bs-theme="dark">
 
-    <div class=" row m-0 p-0 vw-100 position-absolute top-0 start-0 end-0 bottom-0">
+    <div class="row m-0 p-0 vw-100 position-absolute top-0 start-0 end-0 bottom-0">
 
         <!-- SIDEBAR -->
-        <div class=" d-flex flex-column flex-shrink-0 p-3 text-white bg-dark col-2 position-fixed top-0 bottom-0 vh-100 bg-body-tertiary">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark col-2 position-fixed top-0 bottom-0 vh-100 bg-body-tertiary">
 
             <a href="/mvc/public" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                 <div class="fs-4 mb-3">
@@ -138,69 +141,72 @@ $current = $_SERVER['REQUEST_URI'];
         <!-- SECCION DE CONTENIDO -->
         <div class="col-10 offset-2 p-3 overflow-auto vh-100">
 
-            <div class="container-fluid">
+            <div class="container">
 
                 <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Inicio de la Semana de Sistemas 2025</h3>
                 <hr class="my-5">
 
-                <div class="container">
-                    <div class="pb-3">
-                        <p class="fs-4">El lunes 13 de octubre, dio inicio la Semana de Sistemas el acto se realizo en el Auditorio 1.</p>
-                    </div>
+                <!-- SECCION DE INICIO -->
+                <section class="mb-5">
+                    <p class="fs-4">El lunes 13 de octubre, dio inicio la Semana de Sistemas el acto se realizo en el Auditorio 1.</p>
 
-                    <section class="mb-5">
-                        <div class="gallery-grid">
-                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
-                                <img src="/mvc/public/static/img/IMG_6602.JPG" alt="Imagen 1">
-                                <div class="gallery-overlay">
-                                    <h5>Momentos antes de iniciar...</h5>
-                                    <p class="small">Preparativos finales</p>
-                                </div>
-                            </div>
-                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
-                                <img src="/mvc/public/static/img/IMG_6747.JPG" alt="Imagen 2">
-                                <div class="gallery-overlay">
-                                    <h5>Ceremonia de apertura</h5>
-                                    <p class="small">Inicio oficial del evento</p>
-                                </div>
-                            </div>
-                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
-                                <img src="/mvc/public/static/img/IMG_6746.JPG" alt="Imagen 3">
-                                <div class="gallery-overlay">
-                                    <h5>Asistentes al evento</h5>
-                                    <p class="small">Audiencia participante</p>
-                                </div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
+                            <img src="/mvc/public/static/img/IMG_6602.JPG" alt="Imagen 1">
+                            <div class="gallery-overlay">
+                                <h5>Momentos antes de iniciar...</h5>
+                                <p class="small">Preparativos finales</p>
                             </div>
                         </div>
-                    </section>
-                </div>
+                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
+                            <img src="/mvc/public/static/img/IMG_6747.JPG" alt="Imagen 2">
+                            <div class="gallery-overlay">
+                                <h5>Ceremonia de apertura</h5>
+                                <p class="small">Inicio oficial del evento</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal">
+                            <img src="/mvc/public/static/img/IMG_6746.JPG" alt="Imagen 3">
+                            <div class="gallery-overlay">
+                                <h5>Asistentes al evento</h5>
+                                <p class="small">Audiencia participante</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- FIN DE LA SECCION DE INICIO -->
+
 
                 <!-- SECCION DE PONENCIAS -->
                 <hr class="my-5">
                 <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Ponencias...</h3>
                 <hr class="my-5">
 
-                <section class="d-flex flex-row justify-content-evenly mb-5" style="padding-bottom: 20px;">
+                <section class="row" style="padding-bottom: 20px;">
 
-                    <div class="card" style="width: 35rem;">
-                        <img style="height: 400px" src="/mvc/public/static/img/IMG_6748.JPG" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text fs-5">La primera ponencia estuvo a cargo de Luis Contreras, con el tema “El ABC de Bitcoin”,
-                                donde abordó los fundamentos de las criptomonedas, su funcionamiento y el impacto de la tecnología blockchain
-                                en la economía digital actual. Su exposición permitió comprender los retos y oportunidades que ofrece esta
-                                nueva forma de intercambio financiero.</p>
+                    <div class="col-sm-12 col-lg-12 col-xl-6 col-xxl-6 p-3">
+                        <div class="card">
+                            <img class="card-img" src="/mvc/public/static/img/IMG_6748.JPG" class="card-img-top" alt="...">
+                            <div class="card-body" style="height: auto;">
+                                <p class="card-text fs-5">La primera ponencia estuvo a cargo de Luis Contreras, con el tema “El ABC de Bitcoin”,
+                                    donde abordó los fundamentos de las criptomonedas, su funcionamiento y el impacto de la tecnología blockchain
+                                    en la economía digital actual. Su exposición permitió comprender los retos y oportunidades que ofrece esta
+                                    nueva forma de intercambio financiero. </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card" style="width: 35rem;">
-                        <img style="height: 400px" src="/mvc/public/static/img/IMG_6745.JPG" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text fs-5">Posteriormente, Rodrigo Pineda presentó la conferencia
-                                “Inteligencia Artificial Generativa: de la idea a la acción”, en la que
-                                exploró cómo los modelos de IA pueden transformar la creatividad humana,
-                                automatizar procesos y generar soluciones innovadoras para distintos sectores.
-                                Su ponencia inspiró a los asistentes a adentrarse en el mundo de la inteligencia
-                                artificial con una visión práctica y responsable.</p>
+                    <div class="col-sm-12 col-lg-12 col-xl-6 col-xxl-6 p-3">
+                        <div class="card">
+                            <img class="card-img" src="/mvc/public/static/img/IMG_6745.JPG" class="card-img-top" alt="...">
+                            <div class="card-body" style="height: auto;">
+                                <p class="card-text fs-5">Posteriormente, Rodrigo Pineda presentó la conferencia
+                                    “Inteligencia Artificial Generativa: de la idea a la acción”, en la que
+                                    exploró cómo los modelos de IA pueden transformar la creatividad humana,
+                                    automatizar procesos y generar soluciones innovadoras para distintos sectores.
+                                    Su ponencia inspiró a los asistentes a adentrarse en el mundo de la inteligencia
+                                    artificial con una visión práctica y responsable.</p>
+                            </div>
                         </div>
                     </div>
                 </section>

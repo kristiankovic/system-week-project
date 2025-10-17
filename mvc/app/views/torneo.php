@@ -72,6 +72,14 @@ $current = $_SERVER['REQUEST_URI'];
                 <a href="#" class="btn btn-success">Iniciar sesión</a>
             </div>
             <!-- FIN DEL SIDEBAR -->
+
+            <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Inicio de la Semana de Sistemas 2025</h3>
+            <hr class="my-5">
+
+            <div class="pb-3">
+                <p class="fs-4">El miércoles 15 de octubre se llevaria a cabo el torneo de fútbol 11.</p>
+                <p>Pero debido a factores climáticos tuvo que suspenderse de manera definitiva.</p>
+            </div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
