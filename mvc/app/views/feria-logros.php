@@ -81,6 +81,11 @@ $current = $_SERVER['REQUEST_URI'];
                         Feria de logros y Pupuseada
                     </a>
                 </li>
+                <li>
+                    <a href="/mvc/public/bingo" class="nav-link <?= ($current == '/mvc/public/bingo' ? 'bg-secondary' : 'text-white'); ?>">
+                        Bingo y torneo de videojuegos
+                    </a>
+                </li>
             </ul>
 
             <hr>
@@ -106,7 +111,7 @@ $current = $_SERVER['REQUEST_URI'];
                 <div class="py-3">
 
                     <!-- SECCION DE CARDS -->
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-center">
                         <div class="col">
                             <div class="card shadow-sm">
                                 <img src="/mvc/public/static/img/feria1.jpg" class="card-img-top" alt="...">
@@ -242,12 +247,32 @@ $current = $_SERVER['REQUEST_URI'];
                     </div>
 
                     <div class="py-4">
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-center">
+
                             <div class="col">
                                 <div class="card shadow-sm">
-                                    <img src="/mvc/public/static/img/feria1.jpg" class="card-img-top" alt="...">
+                                    <img src="/mvc/public/static/img/pupuseada1.JPG" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Proyecto 1</p>
+                                        <p class="card-text">Participantes y publico reuniendose previo al evento.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="/mvc/public/static/img/pupuseada2.JPG" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Momentos previos a dar inicio al evento.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="/mvc/public/static/img/pupuseada3.JPG" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Logo de la Semana de Sistemas</p>
                                     </div>
                                 </div>
                             </div>

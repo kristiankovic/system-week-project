@@ -14,10 +14,6 @@ $current = $_SERVER['REQUEST_URI'];
         .nav-link {
             color: white;
         }
-        
-        .card-img img{
-            
-        }
     </style>
 </head>
 
@@ -28,8 +24,8 @@ $current = $_SERVER['REQUEST_URI'];
         <!-- SIDEBAR -->
         <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark col-2 position-fixed top-0 bottom-0 vh-100 bg-body-tertiary">
 
-            <a href="/mvc/public" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <div class="fs-4 mb-3">
+            <a href="/mvc/public" class="d-flex justify-content-center align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <div class=" fs-4 mb-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
                     </svg>
@@ -66,6 +62,11 @@ $current = $_SERVER['REQUEST_URI'];
                 <li>
                     <a href="/mvc/public/feria-logros" class="nav-link <?= ($current == '/mvc/public/feria-logros' ? 'bg-secondary' : 'text-white'); ?>">
                         Feria de logros y Pupuseada
+                    </a>
+                </li>
+                <li>
+                    <a href="/mvc/public/bingo" class="nav-link <?= ($current == '/mvc/public/bingo' ? 'bg-secondary' : 'text-white'); ?>">
+                        Bingo y Torneo de videojuegos
                     </a>
                 </li>
             </ul>

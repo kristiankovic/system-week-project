@@ -19,6 +19,10 @@ $current = $_SERVER['REQUEST_URI'];
             height: 100%;
             width: 100%;
         }
+
+        .card-heigth{
+            height: 600px;
+        }
     </style>
 </head>
 
@@ -69,6 +73,11 @@ $current = $_SERVER['REQUEST_URI'];
                         Feria de logros y Pupuseada
                     </a>
                 </li>
+                <li>
+                    <a href="/mvc/public/bingo" class="nav-link <?= ($current == '/mvc/public/bingo' ? 'bg-secondary' : 'text-white'); ?>">
+                        Bingo y torneo de videojuegos
+                    </a>
+                </li>
             </ul>
 
             <hr>
@@ -92,11 +101,11 @@ $current = $_SERVER['REQUEST_URI'];
 
                 <div class="row g-4">
 
-                    <div class="col-12 col-sm-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 img-torneo">
+                    <div class="col-12 col-sm-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 img-torneo card-heigth">
                         <img src="/mvc/public/static/img/torneo-cancelado.jpg" alt="Aviso UES" style="border-radius: 8px;">
                     </div>
 
-                    <div class="col-12 col-sm-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 img-torneo">
+                    <div class="col-12 col-sm-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 img-torneo card-heigth">
                         <img src="/mvc/public/static/img/aviso.jpg" alt="Aviso MINED" style="border-radius: 8px;">
                     </div>
                 </div>

@@ -131,6 +131,11 @@ $current = $_SERVER['REQUEST_URI'];
                         Feria de logros y Pupuseada
                     </a>
                 </li>
+                <li>
+                    <a href="/mvc/public/bingo" class="nav-link <?= ($current == '/mvc/public/bingo' ? 'bg-secondary' : 'text-white'); ?>">
+                        Bingo y torneo de videojuegos
+                    </a>
+                </li>
             </ul>
 
             <hr>

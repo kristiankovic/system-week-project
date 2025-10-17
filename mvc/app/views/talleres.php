@@ -17,19 +17,14 @@ $current = $_SERVER['REQUEST_URI'];
         }
 
         .section img {
-            width: 100%;
             max-width: 100%;
             width: 100%;
-            max-width: 100%;
+            height: 400px;
             object-fit: cover;
             display: block;
         }
 
-        .card-talleres {
-            height: 450px;
-        }
-
-        .card-body-scroll{
+        .card-body-scroll {
             overflow: scroll;
         }
     </style>
@@ -82,6 +77,11 @@ $current = $_SERVER['REQUEST_URI'];
                         Feria de logros y Pupuseada
                     </a>
                 </li>
+                <li>
+                    <a href="/mvc/public/bingo" class="nav-link <?= ($current == '/mvc/public/bingo' ? 'bg-secondary' : 'text-white'); ?>">
+                        Bingo y torneo de videojuegos
+                    </a>
+                </li>
             </ul>
 
             <hr>
@@ -92,11 +92,12 @@ $current = $_SERVER['REQUEST_URI'];
         <!-- SECCION DE TARJETAS -->
         <div class="col-10 offset-2 p-3 overflow-auto vh-100">
 
-            <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2 mb-4">Talleres que se impartieron en la Semana de Sistemas 2025</h3>
-            <hr class="mt-5">
-            
-            <p class="fs-4">Se llevaron a cabo varios talleres, a los cuales solo pude entrar a 2.</p>
             <div class="container">
+
+                <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2 mb-4">Talleres que se impartieron en la Semana de Sistemas 2025</h3>
+                <hr class="mt-5">
+
+                <p class="fs-4">Se llevaron a cabo varios talleres, a los cuales solo pude entrar a 2.</p>
 
                 <div class="card mb-3 border-0">
                     <div class="row g-0">
@@ -136,17 +137,19 @@ $current = $_SERVER['REQUEST_URI'];
 
                     <div class="row">
 
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 p-2 section">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 p-2 section">
                             <img class="rounded-4" src="/mvc/public/static/img/taller1_1.png" alt="Visualizacion del taller de forma virtual">
                         </div>
 
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 p-2 section">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 p-2 section">
                             <img class="rounded-4" src="/mvc/public/static/img/taller1-2.png" alt="Visualizacion del taller de forma virtual">
                         </div>
                     </div>
 
                 </section>
                 <!-- FIN DE LA SECCION DE FEEDBACK DEL TALLER 1 -->
+
+                <hr class="mt-5">
 
                 <!-- SECCION DEL TALLER 2 -->
                 <div class="card mb-3 border-0">
@@ -188,73 +191,99 @@ $current = $_SERVER['REQUEST_URI'];
                     <div class="container">
 
                         <!-- SECCION DE CARDS -->
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                        <div class="row">
 
                             <!-- PRIMERA COLUMNA -->
-                            <div class="col">
-                                <div class="card card-talleres shadow-sm">
+                            <!-- <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 col-xxl-4 p-2">
+                                <div class="card shadow-sm">
                                     <img src="/mvc/public/static/img/taller2-evidencia.JPG">
                                     <div class="card-body">
                                         <p class="card-text">Visualización del taller de forma virtual.</p>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
+
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 p-3">
+                                            <img src="/mvc/public/static/img/taller2-evidencia.JPG" class="img-fluid rounded-start">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Visualización del taller de forma virtual.</h5>
+                                                <p class="card-text">Ya que no se pudo realizar como se esperaba, el evento del martes 14 de octubre se llevo a cabo de
+                                                    manera virtual.
+                                                </p>
+
+                                                <p class="card-text">En el taller se hablo de la importancia de las diferentes tecnologías
+                                                    que se utilizan para el desarrollo web, entre ellas Filament y Laravel.
+                                                </p>
+                                                <p class="card-text"><small class="text-body-secondary">Dirigido por Ing. Gabriel Castillo</small></p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- FIN DE LA PRIMERA COLUMNA -->
 
                             <!-- SEGUNDA COLUMNA -->
-                            <div class="col">
-                                <div class="card card-talleres shadow-sm">
-                                    <img src="/mvc/public/static/img/filament.png" style="height: 222px;">
-                                    <div class="card-body card-body-scroll">
-                                        <p class="card-text">Filament es un framework de interfaz de usuario completo para 
-                                            Laravel que permite crear paneles de administración modernos de manera rápida y 
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-2">
+
+                                <div class="card shadow-sm">
+                                    <img src="/mvc/public/static/img/filament.png">
+                                    <div class="card-body" style="height: auto">
+                                        <p class="card-text"><strong class="text-primary">Filament</strong> es un framework de interfaz de usuario completo para
+                                            Laravel que permite crear paneles de administración modernos de manera rápida y
                                             sencilla. Utiliza un conjunto de componentes "full-stack" para desarrollar interfaces
-                                             intuitivas para gestionar datos, usuarios y flujos de trabajo, simplificando la creación 
-                                             de back offices sin necesidad de escribir gran cantidad de código de frontend</p>
+                                            intuitivas para gestionar datos, usuarios y flujos de trabajo, simplificando la creación
+                                            de back offices sin necesidad de escribir gran cantidad de código de frontend</p>
                                     </div>
                                 </div>
                             </div>
                             <!-- FIN DE LA PRIMERA COLUMNA-->
 
                             <!-- TERCERA COLUMNA -->
-                            <div class="col">
-                                <div class="card card-talleres shadow-sm">
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-2">
+
+                                <div class="card shadow-sm">
                                     <img src="/mvc/public/static/img/laravel.jpg" alt="Laravel Framework">
-                                    <div class="card-body card-body-scroll">
-                                        <p class="card-text">Laravel es un popular framework de código abierto para desarrollar aplicaciones 
-                                            web en PHP que facilita la creación de aplicaciones de manera rápida y elegante. Utiliza la arquitectura 
-                                            Modelo-Vista-Controlador (MVC) y proporciona herramientas para tareas comunes como el enrutamiento, la 
-                                            validación, la autenticación, el almacenamiento en caché y el acceso a bases de datos a través de su ORM 
+                                    <div class="card-body card-body-scroll" style="height: 300px;">
+                                        <p class="card-text"><strong class="text-primary">Laravel</strong> es un popular framework de código abierto para desarrollar aplicaciones
+                                            web en PHP que facilita la creación de aplicaciones de manera rápida y elegante. Utiliza la arquitectura
+                                            Modelo-Vista-Controlador (MVC) y proporciona herramientas para tareas comunes como el enrutamiento, la
+                                            validación, la autenticación, el almacenamiento en caché y el acceso a bases de datos a través de su ORM
                                             (Eloquent)
 
-                                            <p><strong>Características principales: </strong></p>
+                                        <p><strong>Características principales: </strong></p>
 
-                                            <ul>
-                                                <li>PHP y código abierto: Está construido sobre PHP y es de código abierto, lo que significa que es 
-                                                    gratuito y tiene una gran comunidad de desarrolladores.
-                                                </li>
+                                        <ul>
+                                            <li>PHP y código abierto: Está construido sobre PHP y es de código abierto, lo que significa que es
+                                                gratuito y tiene una gran comunidad de desarrolladores.
+                                            </li>
 
-                                                <br>
-                                                <li>
-                                                    Arquitectura MVC: Sigue el patrón de arquitectura Modelo-Vista-Controlador (MVC) para separar 
-                                                    las responsabilidades y hacer el código más organizado. 
-                                                </li><br>
+                                            <br>
+                                            <li>
+                                                Arquitectura MVC: Sigue el patrón de arquitectura Modelo-Vista-Controlador (MVC) para separar
+                                                las responsabilidades y hacer el código más organizado.
+                                            </li><br>
 
-                                                <li>
-                                                    Simplifica el desarrollo: Ofrece herramientas y funciones integradas para simplificar tareas comunes, 
-                                                    como la autenticación, la gestión de bases de datos (mediante migraciones y Eloquent) y el manejo de rutas. 
-                                                </li><br>
+                                            <li>
+                                                Simplifica el desarrollo: Ofrece herramientas y funciones integradas para simplificar tareas comunes,
+                                                como la autenticación, la gestión de bases de datos (mediante migraciones y Eloquent) y el manejo de rutas.
+                                            </li><br>
 
-                                                <li>
-                                                    Motor de plantillas <strong>Blade</strong>: Incluye un potente motor de plantillas llamado Blade que permite crear 
-                                                    vistas dinámicas de una manera sencilla y elegante. 
-                                                </li><br>
+                                            <li>
+                                                Motor de plantillas <strong>Blade</strong>: Incluye un potente motor de plantillas llamado Blade que permite crear
+                                                vistas dinámicas de una manera sencilla y elegante.
+                                            </li><br>
 
-                                                <li>
-                                                    Flexibilidad: Permite crear aplicaciones complejas con un código limpio y moderno, y es lo suficientemente flexible 
-                                                    para adaptarse a diferentes enfoques de desarrollo, como la creación de APIs. 
-                                                </li>
-                                            </ul>
+                                            <li>
+                                                Flexibilidad: Permite crear aplicaciones complejas con un código limpio y moderno, y es lo suficientemente flexible
+                                                para adaptarse a diferentes enfoques de desarrollo, como la creación de APIs.
+                                            </li>
+                                        </ul>
                                         </p>
                                     </div>
                                 </div>
