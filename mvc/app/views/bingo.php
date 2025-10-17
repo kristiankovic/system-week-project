@@ -143,10 +143,10 @@ $current = $_SERVER['REQUEST_URI'];
 
                 <section class="row">
                     <div class="col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <p class="fs-5">Tambien ese día se llevo a cabo un torneo de videjuegos entre los cuales estaban Mario Kart, Clash Royale
+                        <p class="fs-5">Tambien ese día se llevo a cabo un torneo de videjuegos entre los cuales estaban Clash Royale,
                             entre etros.
                         </p>
-                        
+
                     </div>
 
                     <div class="py-4">
@@ -155,27 +155,27 @@ $current = $_SERVER['REQUEST_URI'];
 
                             <div class="col">
                                 <div class="card shadow-sm">
-                                    <img src="/mvc/public/static/img/" class="card-img-top" alt="...">
+                                    <img src="/mvc/public/static/img/torneo1.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">.</p>
+                                        <p class="card-text">Partidas de Clash Royale</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col">
                                 <div class="card shadow-sm">
-                                    <img src="/mvc/public/static/img/" class="card-img-top" alt="...">
+                                    <img src="/mvc/public/static/img/torneo2.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">.</p>
+                                        <p class="card-text">Participantes del torneo</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col">
                                 <div class="card shadow-sm">
-                                    <img src="/mvc/public/static/img/" class="card-img-top" alt="...">
+                                    <img src="/mvc/public/static/img/torneo3.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">.</p>
+                                        <p class="card-text">Ganador del torneo</p>
                                     </div>
                                 </div>
                             </div>
