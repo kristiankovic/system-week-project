@@ -73,13 +73,13 @@ $current = $_SERVER['REQUEST_URI'];
 
             <hr>
 
-            <a href="#" class="btn btn-success">Iniciar sesión</a>
+            <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</a>
         </div>
         <!-- FIN DEL SIDEBAR -->
 
-        <!-- SECCION DE INFORMACION PERSONAL -->
         <div class="col-10 offset-2 p-3 overflow-auto vh-100">
-
+            
+            <!-- SECCION DE INFORMACION PERSONAL -->
             <div class="container">
 
                 <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Bienvenido al Blog personal sobre la <strong>Semana de Sistemas 2025</strong></h3>
@@ -119,7 +119,7 @@ $current = $_SERVER['REQUEST_URI'];
                                                     <path d="M6.167 8a.83.83 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661m1.843 3.647c.315 0 1.403-.038 1.976-.611a.23.23 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83s.83-.381.83-.83a.831.831 0 0 0-1.66 0z" />
                                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.2.2 0 0 0-.153.028.2.2 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224q-.03.17-.029.353c0 1.795 2.091 3.256 4.669 3.256s4.668-1.451 4.668-3.256c0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165" />
                                                 </svg>
-                                                <a class="pt-2 text-warning" href="https://www.reddit.com/user/insolennte/" target="_blank">Reddit</a>
+                                                <a class="pt-2" href="https://www.reddit.com/user/insolennte/" target="_blank" style="color: orange;">Reddit</a>
                                             </div>
                                         </div>
 
@@ -147,7 +147,7 @@ $current = $_SERVER['REQUEST_URI'];
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                                                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
                                                 </svg>
-                                                <a href="#" target="_blank" class=""><span class="badge badge-danger">Facebook</span></a>
+                                                <a href="#" target="_blank" class="text-primary pt-2">Facebook</a>
                                             </div>
                                         </div>
 
@@ -158,6 +158,7 @@ $current = $_SERVER['REQUEST_URI'];
                     </div>
 
                 </div>
+                <!-- FIN DE LA SECCION DE INFORMACION PERSONAL -->
 
                 <!-- SECCION SOBRE LAS TECNOLOGIAS USADAS -->
                 <hr class="my-5">
@@ -214,9 +215,50 @@ $current = $_SERVER['REQUEST_URI'];
 
             </div>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         </div>
-        <!-- FIN DE LA SECCION DE INFORMACION PERSONAL -->
+
+        <!-- Modal de Inicio de Sesión -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Nombre de Usuario</label>
+                                <input type="text" class="form-control" id="username" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-success">Ingresar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script>
+            document.querySelector('#loginModal form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const username = document.querySelector('#username').value;
+                const password = document.querySelector('#password').value;
+
+                // Aquí puedes agregar la lógica de autenticación
+                console.log('Usuario:', username, 'Contraseña:', password);
+
+                // Cerrar el modal
+                const modal = bootstrap.Modal.getInstance(document.querySelector('#loginModal'));
+                modal.hide();
+            });
+        </script>
 </body>
 
 </html>

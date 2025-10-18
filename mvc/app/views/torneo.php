@@ -15,12 +15,12 @@ $current = $_SERVER['REQUEST_URI'];
             color: white;
         }
 
-        .img-torneo img{
+        .img-torneo img {
             height: 100%;
             width: 100%;
         }
 
-        .card-heigth{
+        .card-heigth {
             height: 600px;
         }
     </style>
@@ -82,7 +82,7 @@ $current = $_SERVER['REQUEST_URI'];
 
             <hr>
 
-            <a href="#" class="btn btn-success">Iniciar sesión</a>
+            <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</a>
         </div>
         <!-- FIN DEL SIDEBAR -->
 
@@ -93,7 +93,7 @@ $current = $_SERVER['REQUEST_URI'];
 
                 <h3 class="text-center badget bg-primary fs-3 rounded-3 p-2">Torneo de Fútbol 11</h3>
                 <hr class="mt-5">
-                
+
                 <div class="text-danger">
                     <h3 class="">El miércoles 15 de octubre se llevaria a cabo el torneo de fútbol 11.</h3>
                     <p class="fs-5">Pero debido a factores climáticos tuvo que suspenderse de manera definitiva.</p>
@@ -116,7 +116,48 @@ $current = $_SERVER['REQUEST_URI'];
 
     </div>
 
+    <!-- Modal de Inicio de Sesión -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Nombre de Usuario</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-success">Ingresar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        document.querySelector('#loginModal form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.querySelector('#username').value;
+            const password = document.querySelector('#password').value;
+
+            // Aquí puedes agregar la lógica de autenticación
+            console.log('Usuario:', username, 'Contraseña:', password);
+
+            // Cerrar el modal
+            const modal = bootstrap.Modal.getInstance(document.querySelector('#loginModal'));
+            modal.hide();
+        });
+    </script>
 </body>
 
 </html>
